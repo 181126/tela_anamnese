@@ -6,10 +6,52 @@
     <title>Tela de Anamnese</title>
     <link href="css/bootstrap.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
-    <br>
+<!--
+  <header>
+    <div class="topo">
+      <div class="">
+        <img class="logoDentalTec" src="img/DentalTec.png">
+      </div>
+      <nav class="opcoes">
+        <ul>
+          <li class="itensMenu"><a href="">Início</a></li>
+          <li class="itensMenu"><a href="">Clientes</a></li>
+          <li class="itensMenu"><a href="">Fornecedores</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+-->
+
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark">
     <div class="container">
+      <a href="index.html" class="navbar-brand">
+        <img class="logoDentalTec" src="img/DentalTec.png">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#meumenu" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="meumenu">      
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Clientes</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Fornecedores</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+    <br>
+    <div class=" container">
         <h1>Cadastrar Anamnese</h1>
         <div class="row">
             <div class="form-group col-3">
@@ -41,14 +83,14 @@
                 <div>
                     <label>Teve febre nos 14 últimos dias?</label>
                     <div class="form-check">
-                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                        <label class="form-check-label" for="flexRadioDefault1">
+                        <input class="form-check-input" type="radio" name="febre" id="febresim">
+                        <label class="form-check-label" for="febresim">
                           Sim
                         </label>
                       </div>
                       <div class="form-check">
-                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                        <label class="form-check-label" for="flexRadioDefault1">
+                        <input class="form-check-input" type="radio" name="febre" id="febrenao">
+                        <label class="form-check-label" for="febrenao">
                           Não
                         </label>
                       </div>
@@ -57,14 +99,14 @@
                 <div>
                     <label>Faz tratamento médico atualmente?</label>
                     <div class="form-check">
-                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                        <label class="form-check-label" for="flexRadioDefault1">
+                        <input class="form-check-input" type="radio" name="tratamento" id="tratamentosim">
+                        <label class="form-check-label" for="tratamentosim">
                           Sim
                         </label>
                       </div>
                       <div class="form-check">
-                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                        <label class="form-check-label" for="flexRadioDefault1">
+                        <input class="form-check-input" type="radio" name="tratamento" id="tratamentonao">
+                        <label class="form-check-label" for="tratamentonao">
                           Não
                         </label>
                       </div>
@@ -73,14 +115,14 @@
                 <div>
                     <label>Já teve problemas com cicatrização?</label>
                     <div class="form-check">
-                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                        <label class="form-check-label" for="flexRadioDefault1">
+                        <input class="form-check-input" type="radio" name="cicatrizacao" id="cicatrizacaosim">
+                        <label class="form-check-label" for="cicatrizacaosim">
                           Sim
                         </label>
                       </div>
                       <div class="form-check">
-                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                        <label class="form-check-label" for="flexRadioDefault1">
+                        <input class="form-check-input" type="radio" name="cicatrizacao" id="cicatrizacaonao">
+                        <label class="form-check-label" for="cicatrizacaonao">
                           Não
                         </label>
                       </div>
@@ -89,14 +131,14 @@
                 <div>
                     <label>Já teve problemas com anestesia?</label>
                     <div class="form-check">
-                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                        <label class="form-check-label" for="flexRadioDefault1">
+                        <input class="form-check-input" type="radio" name="anestesia" id="anestesiasim">
+                        <label class="form-check-label" for="anestesiasim">
                           Sim
                         </label>
                       </div>
                       <div class="form-check">
-                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                        <label class="form-check-label" for="flexRadioDefault1">
+                        <input class="form-check-input" type="radio" name="anestesia" id="anestesianao">
+                        <label class="form-check-label" for="anestesianao">
                           Não
                         </label>
                       </div>
@@ -105,30 +147,14 @@
                 <div>
                     <label>Já usou drogas?</label>
                     <div class="form-check">
-                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                        <label class="form-check-label" for="flexRadioDefault1">
+                        <input class="form-check-input" type="radio" name="drogas" id="drogassim">
+                        <label class="form-check-label" for="drogassim">
                           Sim
                         </label>
                       </div>
                       <div class="form-check">
-                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                        <label class="form-check-label" for="flexRadioDefault1">
-                          Não
-                        </label>
-                      </div>
-                </div>
-    
-                <div>
-                    <label>Diabetes?</label>
-                    <div class="form-check">
-                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                        <label class="form-check-label" for="flexRadioDefault1">
-                          Sim
-                        </label>
-                      </div>
-                      <div class="form-check">
-                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                        <label class="form-check-label" for="flexRadioDefault1">
+                        <input class="form-check-input" type="radio" name="drogas" id="drogasnao">
+                        <label class="form-check-label" for="drogasnao">
                           Não
                         </label>
                       </div>
@@ -137,14 +163,14 @@
                 <div>
                     <label>Doenças familiar?</label>
                     <div class="form-check">
-                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                        <label class="form-check-label" for="flexRadioDefault1">
+                        <input class="form-check-input" type="radio" name="familiar" id="familiarsim">
+                        <label class="form-check-label" for="familiarsim">
                           Sim
                         </label>
                       </div>
                       <div class="form-check">
-                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                        <label class="form-check-label" for="flexRadioDefault1">
+                        <input class="form-check-input" type="radio" name="familiar" id="familiarnao">
+                        <label class="form-check-label" for="familiarnao">
                           Não
                         </label>
                       </div>
@@ -154,14 +180,14 @@
                 <div>
                     <label>Tem alergia?</label>
                     <div class="form-check">
-                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                        <label class="form-check-label" for="flexRadioDefault1">
+                        <input class="form-check-input" type="radio" name="alergia" id="alergiasim">
+                        <label class="form-check-label" for="alergiasim">
                           Sim
                         </label>
                       </div>
                       <div class="form-check">
-                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                        <label class="form-check-label" for="flexRadioDefault1">
+                        <input class="form-check-input" type="radio" name="alergia" id="alergianao">
+                        <label class="form-check-label" for="alergianao">
                           Não
                         </label>
                       </div>
@@ -173,14 +199,14 @@
                 <div>
                     <label>Doenças articulares ou remáticas?</label>
                     <div class="form-check">
-                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                        <label class="form-check-label" for="flexRadioDefault1">
+                        <input class="form-check-input" type="radio" name="artreu" id="artreusim">
+                        <label class="form-check-label" for="artreusim">
                           Sim
                         </label>
                       </div>
                       <div class="form-check">
-                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                        <label class="form-check-label" for="flexRadioDefault1">
+                        <input class="form-check-input" type="radio" name="artreu" id="artreunao">
+                        <label class="form-check-label" for="artreunao">
                           Não
                         </label>
                       </div>
@@ -189,14 +215,14 @@
                 <div>
                     <label>Hipertensão arterial?</label>
                     <div class="form-check">
-                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                        <label class="form-check-label" for="flexRadioDefault1">
+                        <input class="form-check-input" type="radio" name="hipertensao" id="hipertensaosim">
+                        <label class="form-check-label" for="hipertensaosim">
                           Sim
                         </label>
                       </div>
                       <div class="form-check">
-                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                        <label class="form-check-label" for="flexRadioDefault1">
+                        <input class="form-check-input" type="radio" name="hipertensao" id="hipertensaonao">
+                        <label class="form-check-label" for="hipertensaonao">
                           Não
                         </label>
                       </div>
@@ -205,14 +231,14 @@
                 <div>
                     <label>DST´s?</label>
                     <div class="form-check">
-                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                        <label class="form-check-label" for="flexRadioDefault1">
+                        <input class="form-check-input" type="radio" name="dst" id="dstsim">
+                        <label class="form-check-label" for="dstsim">
                           Sim
                         </label>
                       </div>
                       <div class="form-check">
-                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                        <label class="form-check-label" for="flexRadioDefault1">
+                        <input class="form-check-input" type="radio" name="dst" id="dstnao">
+                        <label class="form-check-label" for="dstnao">
                           Não
                         </label>
                       </div>
@@ -221,14 +247,14 @@
                 <div>
                     <label>Doenças cardíacas?</label>
                     <div class="form-check">
-                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                        <label class="form-check-label" for="flexRadioDefault1">
+                        <input class="form-check-input" type="radio" name="cardiaca" id="cardiacasim">
+                        <label class="form-check-label" for="cardiacasim">
                           Sim
                         </label>
                       </div>
                       <div class="form-check">
-                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                        <label class="form-check-label" for="flexRadioDefault1">
+                        <input class="form-check-input" type="radio" name="cardiaca" id="cardiacanao">
+                        <label class="form-check-label" for="cardiacanao">
                           Não
                         </label>
                       </div>
@@ -237,24 +263,40 @@
                 <div>
                     <label>gravidez?</label>
                     <div class="form-check">
-                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                        <label class="form-check-label" for="flexRadioDefault1">
+                        <input class="form-check-input" type="radio" name="gravidez" id="gravidezsim">
+                        <label class="form-check-label" for="gravidezsim">
                           Sim
                         </label>
                       </div>
                       <div class="form-check">
-                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                        <label class="form-check-label" for="flexRadioDefault1">
+                        <input class="form-check-input" type="radio" name="gravidez" id="gravideznao">
+                        <label class="form-check-label" for="gravideznao">
                           Não
                         </label>
                       </div>
                 </div>
-
-                <div class="form-group">
-                    <label>Observações Importantes</label>
-                    <input type="text" class="form-select">
-                </div>
-
+                <div>
+                  <label>Diabetes?</label>
+                  <div class="form-check">
+                      <input class="form-check-input" type="radio" name="diabetes" id="diabetessim">
+                      <label class="form-check-label" for="diabetessim">
+                        Sim
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="diabetes" id="diabetesnao">
+                      <label class="form-check-label" for="diabetesnao">
+                        Não
+                      </label>
+                    </div>
+              </div>
+              <label>Observações Importantes:</label>
+              <br>
+              <div class="form-floating">
+                <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea" style="height: 130px"></textarea>
+                <label for="floatingTextarea">Comentários</label>
+              </div>
+              <br>
                 <div>
                     <button type="submit" class="btn btn-success">
                         Salvar <i class="bi bi-printer"></i>
@@ -263,5 +305,5 @@
             </div>
         </div>
     </div>
-</body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </html>
